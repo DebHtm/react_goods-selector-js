@@ -43,6 +43,7 @@ export const App = () => {
           {goods.map(food => (
             <tr
               data-cy="Good"
+              key={food}
               className={
                 selectedGood === food ? 'has-background-success-light' : ''
               }
